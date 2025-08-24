@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us | Lesotho Hub</title>
+  <style>
+    body {
+      background: url("background.jpg")no-repeat center center/cover;
+     
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+     header {
+      background-color: seagreen;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+    }
+
+  header h1 {
+      margin: 0;
+    }
+    nav a {
+      display: inline-block;
+      background-color: white;
+      text-decoration: none;
+      color: seagreen;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-left: 10px;
+    }
+    nav a:hover {
+      background-color: darkgreen;
+      color: white;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      color: black;
+    }
+    main h2 {
+      color: darkgreen;
+      margin-bottom: 15px;
+      border-bottom: 2px solid seagreen;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+      color: darkgreen;
+    }
+    input, textarea, select {
+      padding: 10px;
+      border: 1px solid seagreen;
+      border-radius: 6px;
+      font-size: 14px;
+      width: 100%;
+    }
+    textarea {
+      min-height: 120px;
+    }
+    button {
+      background-color: seagreen;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: darkgreen;
+    }
+
+    footer {
+      background: seagreen;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px auto;
+    font-size: 16px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+ 
+
+ 
+
+  .section {
+    padding: 15px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+ 
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LESOTHO HUB</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Business.html">Business</a>
+      <a href="AboutUs.html">AboutUs</a>
+      <a href="Contact.html">Contact</a>
+      <a href="Tips.html">Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="section">
+      <h2>Get in Touch</h2>
+      <p>
+        Have questions, feedback, or a claim to submit?  
+        Fill out the form below and our team will get back to you as soon as possible.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Submit Your Claim</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <label for="claim-type">Type of Claim</label>
+        <select id="claim-type" name="claim-type" required>
+          <option value="">-- Select an option --</option>
+          <option value="delivery">Delivery Issue</option>
+          <option value="payment">Payment Issue</option>
+          <option value="product">Product Complaint</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Claim Details</label>
+        <textarea id="message" name="message" placeholder="Describe your claim in detail..." required></textarea>
+
+        <button type="submit">Submit Claim</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> support@lesothhub.com</p>
+      <p><strong>Phone:</strong> +266 500 12345</p>
+      <p><strong>Address:</strong> Maseru, Lesotho</p>
+    </div>
+
+
+        <div class="section">
+      <h2>Find Us</h2>
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.366751929865!2d27.4833!3d-29.3167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8dcbf3a7c6e3f5%3A0x2b7a97a47d5efc!2sMaseru%2C%20Lesotho!5e0!3m2!1sen!2sls!4v1700000000000!5m2!1sen!2sls" 
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lesotho Hub | Empowering Farmers & Business</p>
+  </footer>
+</body>
+</html>

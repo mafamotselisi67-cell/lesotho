@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesotho Hub</title>
+	<style>
+		body{
+			background-color: yellowgreen;
+		}
+		body {
+			background-color: yellowgreen;
+			font-family: Tahoma, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: seagreen;
+			color: white;
+			padding: 15px 30px;
+			display: flex;
+			justify-content: space-between; 
+			align-items: center;
+		}
+		header h1 {
+			margin: 0;
+		}
+		nav a {
+			display: inline-block;
+			background-color: white;
+			text-decoration: none;
+			color: seagreen;
+			padding: 8px 16px;
+			border-radius: 5px;
+			font-weight: bold;
+			transition: 0.3s;
+			margin-left: 10px;
+		}
+		nav a:hover {
+			background-color: seagreen;
+			color: white;
+		}
+
+		main {
+			padding: 20px;
+			text-align: center;
+		}
+		main h2 {
+			color: darkgreen;
+			margin-bottom: 20px;
+		}
+
+		
+		.product-grid {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			justify-content: center;
+		}
+		.product {
+			border: 2px solid gray;
+			padding: 15px;
+			width: 200px;
+			text-align: center;
+			background-color: whitesmoke;
+			border-radius: 10px;
+			transition: transform 0.3s;
+		}
+		.product img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 5px;
+		}
+		.product:hover {
+			transform: scale(1.05);
+		}
+		.product h3 {
+			margin: 10px 0 5px;
+			color: seagreen;
+		}
+		.product p {
+			margin: 0;
+			font-weight: bold;
+		}
+		.farmers {
+	       background: white;
+	       padding: 15px;
+	       border-radius: 10px;
+	       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	       transition: transform 0.3s;
+	       text-align: center; 
+	       color: black;
+	   }
+
+       .farmers{
+		    display: grid;
+	        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	        gap: 30px;  
+	        margin-top: 30px;
+	        padding: 30px;
+	    }
+		.farmer1 {
+			border: 1px solid gray;
+			background: yellowgreen;
+			padding: 15px;
+			margin: 15px auto;
+			width: 80%;
+			max-width: 700px;
+			text-align: center;
+			border-radius: 10px;
+		}
+
+		.farmer2
+		{
+			border: 1px solid gray;
+			background: yellowgreen;
+			padding: 15px;
+			margin: 15px auto;
+			width: 80%;
+			max-width: 700px;
+			text-align: center;
+			border-radius: 10px;
+		}
+
+		.farmer3 
+		{
+			border: 1px solid gray;
+			background: yellowgreen;
+			padding: 15px;
+			margin: 15px auto;
+			width: 80%;
+			max-width: 700px;
+			text-align: center;
+			border-radius: 10px;
+		}
+	
+		
+		footer {
+			background: seagreen;
+			color: white;
+			text-align: center;
+			padding: 15px;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+		}
+		@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px auto;
+    font-size: 16px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .farmers {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .product img, .farmers img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>LESOTHO HUB</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="Business.html">Business</a>
+			<a href="AboutUs.html">AboutUs</a>
+			<a href="Contact.html">Contact</a>
+			<a href="Tips.html">Tips</a>
+		</nav>
+	</header>
+
+	<main>
+		<h2>OUR PRODUCTS & FARMERS</h2>
+		<div class="product-grid">
+			<div class="product">
+				<img src="maize.jpeg">
+				<h3>Maize</h3>
+				<p>Price: M100 (12.5kg)</p>
+			</div>
+			<div class="product">
+				<img src="potatoes.jpg">
+				<h3>Potatoes</h3>
+				<p>Price: M70 per sack</p>
+			</div>
+			<div class="product">
+				<img src="tomatoes.jpg" >
+				<h3>Tomatoes</h3>
+				<p>Price: M65 per box</p>
+			</div>
+			<div class="product">
+				<img src="brocolli.jpg">
+				<h3>Broccoli</h3>
+				<p>Price: M90 per bunch</p>
+			</div>
+			<div class="product">
+				<img src="cabbage.webp">
+				<h3>Cabbage</h3>
+				<p>Price: M15 each / M95 per bag</p>
+			</div>
+			<div class="product">
+				<img src="spinach.jpg">
+				<h3>Spinach</h3>
+				<p>Price: M10 bundle</p>
+			</div>
+		</div>
+	</main>
+
+    
+	<section class="farmers">
+
+    
+		<div class="farmer1">
+			<h4>MR MOKHETHI</h4>
+			<img src="mokhethi.jpg"height ="200px"width ="200px">
+			<p>Mokhethi Molefi, a seed producer of ZM523 maize. He is a prominent seed producer, known for his work with ZM523 maize, a drought-tolerant variety critical for food security in Lesotho.</p>
+		</div>
+		<div class="farmer2">
+			<h5>MR LEFATLE</h5>
+			<img src="thabo.jpeg"height ="200px"width ="200px">
+			<p>Thabo Lefatle, a vegetable farmer who uses greenhouses to protect crops like green beans from unpredictable weather, a common challenge in Lesotho.</p>
+		</div>
+		<div class="farmer3">
+			<h6>LIPHAMOLA FARM</h6>
+			<img src="liphamola.jpeg" height="200px" width="200px">
+			<p>Liphamola Farm raises Dairy Swiss and Black Diamond cattle, ensuring a consistent supply of milk even under challenging weather conditions in Mokhotlong district.</p>
+		</div>
+	</section>
+
+	<footer>
+		<p>&copy; 2025 Lesotho Hub | Empowering Farmers & Business</p>
+	</footer>
+</body>
+</html>

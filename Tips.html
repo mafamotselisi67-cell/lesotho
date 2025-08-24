@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<head>
+  
+  <title>Tips - Lesotho Hub</title>
+  <style>
+    body {
+      background: url("background.jpg")no-repeat center center/cover;
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      line-height: 1.6;
+      
+      color: white;
+    }
+
+    header {
+      background-color: seagreen;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      background-color: white;
+      text-decoration: none;
+      color: seagreen;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+      font-size: 18px;
+      margin-left: 10px;
+    }
+    nav a:hover {
+      background-color: darkgreen;
+      color: white;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: seagreen;
+      margin-bottom: 30px;
+    }
+
+    
+    .tip {
+      background: white;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .tip input {
+      display: none;
+    }
+
+    .tip label {
+      display: block;
+      padding: 15px;
+      background: seagreen;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .tip label::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      font-size: 20px;
+      transition: transform 0.3s;
+    }
+
+    .tip input:checked + label::after {
+      content: "-";
+      transform: rotate(180deg);
+    }
+
+    .tip-content {
+      max-height: 0;
+      overflow: hidden;
+      background: white;
+      padding: 0 15px;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+
+    .tip input:checked ~ .tip-content {
+      max-height: 300px;
+      padding: 15px;
+    }
+
+    .tip-content p {
+      margin: 0;
+      font-size: 15px;
+      color:black;
+    }
+
+    footer {
+      background: seagreen;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px auto;
+    font-size: 16px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+ 
+
+  .section {
+    padding: 15px;
+  }
+
+  .tip-content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LESOTHO HUB</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Business.html">Business</a>
+      <a href="AboutUs.html">About Us</a>
+      <a href="Contact.html">Contact</a>
+      <a href="Tips.html">Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Helpful Farming & Business Tips</h2>
+
+    <div class="tip">
+      <input type="checkbox" id="tip1">
+      <label for="tip1">Farming Skills</label>
+      <div class="tip-content">
+        <p>-Learn modern farming techniques like crop rotation.<br>
+           - Use compost and organic manure.<br>
+           - Save rainwater for irrigation.<br>
+           - Protect crops with natural pest control methods.<br>
+           - pest management to maximize yield and reduce risks</p>   
+      </div>
+    </div>
+
+    <div class="tip">
+      <input type="checkbox" id="tip2">
+      <label for="tip2">Marketing & Sales</label>
+      <div class="tip-content">
+        <p>-Understand your market.<br>
+           -Brand your products.<br>
+           -Use digital platforms like Facebook or WhatsApp groups to reach more customers.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <input type="checkbox" id="tip3">
+      <label for="tip3">Tools & Technology</label>
+      <div class="tip-content">
+        <p>Adopt modern tools like irrigation systems, mobile apps for farming updates, and online platforms for selling your products.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <input type="checkbox" id="tip4">
+      <label for="tip4">Financial Management</label>
+      <div class="tip-content">
+        <p>-Keep track of expenses.
+           -Save profits.<br> 
+           -Invest in quality seeds, fertilizers, and sustainable equipment.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <input type="checkbox" id="tip5">
+      <label for="tip5">Sustainability</label>
+      <div class="tip-content">
+        <p>-Practice eco-friendly farming.<br>
+           -Use organic fertilizers.<br>
+           -manage water resources carefully to protect the environment for future generations.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lesotho Hub</p>
+  </footer>
+</body>
+</html>
